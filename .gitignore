@@ -1,0 +1,70 @@
+############################
+# Global Ignore
+############################
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE configs
+.vscode/
+.idea/
+
+############################
+# FRONTEND (Next.js) Folder
+############################
+
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Next.js build
+frontend/.next/
+frontend/out/
+
+# Production build
+frontend/build/
+
+# Vercel deploy folder
+frontend/.vercel/
+
+# Testing
+frontend/coverage/
+
+# Yarn / PnP
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# TypeScript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Prisma (if generated)
+frontend/app/generated/prisma/
+
+############################
+# Backend (if exists)
+############################
+backend/node_modules/
+backend/dist/
+backend/build/
+
