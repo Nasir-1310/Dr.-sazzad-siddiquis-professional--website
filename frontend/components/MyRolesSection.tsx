@@ -85,12 +85,12 @@ export default function MyRolesSection() {
   ];
 
   return (
-    <section className="py-12 px-4 sm:py-16 md:py-20 lg:py-32 bg-gray-50">
+    <section className="py-6 px-4 sm:py-8 md:py-10 lg:py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-14 md:mb-16 lg:mb-20">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight px-4">
-            My Professional Journey
+            Professional Journey
           </h2>
           <p className="mt-4 sm:mt-5 md:mt-6 text-base sm:text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light px-4">
             A lifelong dedication to advancing education, literature, evidence-based policy, and public service.

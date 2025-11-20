@@ -9,16 +9,10 @@ export default function HeroSection() {
       className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden"
       aria-label="Hero section"
     >
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 overflow-hidden opacity-40">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-slate-100 rounded-full filter blur-3xl"></div>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-8 sm:py-12 lg:py-20">
+      <div className="relative max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6 lg:py-13">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="text-center lg:text-left space-y-3 sm:space-y-4 lg:space-y-6">
+          <div className="text-center lg:text-left space-y-1 sm:space-y-2 lg:space-y-3">
             {/* Main Heading */}
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
               Empowering Through
@@ -31,6 +25,41 @@ export default function HeroSection() {
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Muhammad Sazzad Hossain Siddiqui, Ph.D., preferably known as Dr. Sazzad Siddiqui, is an Associate Professor & Chairman (Acting) Department of Peace and Conflict Studies in the Department of Peace and Conflict Studies (PACS) at the University of Dhaka, Bangladesh. His academic career began in 2008 when he joined the Department as a Lecturer. His dedication to teaching and research ...
             </p>
+
+          <div className="flex flex-row gap-2 sm:gap-3 justify-center lg:justify-start pt-1 lg:pt-2">
+  <Button
+    href="/about"
+    variant="primary"
+    size="lg"
+    icon={<ArrowRightIcon />}
+    className="
+      whitespace-nowrap
+      px-2 py-0 text-sm                /* mobile */
+      sm:px-3 sm:py-1 sm:text-base      /* tablet */
+      lg:px-4 lg:py-2 lg:text-[15px]    /* desktop */
+    "
+  >
+    Learn More
+  </Button>
+
+  <Button
+    href="/contact"
+    variant="outline"
+    size="lg"
+    icon={<MailIcon />}
+     className="
+      whitespace-nowrap
+      px-2 py-0 text-sm                /* mobile */
+      sm:px-3 sm:py-1 sm:text-base      /* tablet */
+      lg:px-4 lg:py-2 lg:text-[15px]    /* desktop */
+    "
+  >
+    Get In Touch
+  </Button>
+</div>
+
+
+
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4 py-3 lg:py-4">
@@ -60,27 +89,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start pt-1 lg:pt-2">
-              <Button
-                href="/about"
-                variant="primary"
-                size="lg"
-                icon={<ArrowRightIcon />}
-              >
-                Learn More
-              </Button>
-
-              <Button
-                href="/contact"
-                variant="outline"
-                size="lg"
-                icon={<MailIcon />}
-              >
-                Get In Touch
-              </Button>
-            </div>
-
+            
             {/* Credentials */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 lg:gap-5 pt-2 lg:pt-3">
               <div className="flex items-center gap-1.5 sm:gap-2">
@@ -119,8 +128,8 @@ export default function HeroSection() {
             <div className="relative mx-auto max-w-[280px] sm:max-w-sm lg:max-w-lg">
               {/* Desktop: Circular image with decorative ring */}
               <div className="hidden lg:block">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-slate-600 rounded-full transform scale-105 opacity-10"></div>
-                <div className="relative w-full aspect-square rounded-full overflow-hidden shadow-2xl border-8 border-white">
+                
+                <div className="relative w-full aspect-square overflow-hidden shadow-2xl border-8 border-white">
                   <Image
                     src="/images/hero-images/Sazzad.jpg"
                     alt="Dr. Sazzad Siddiqui - Educator, Author, and Public Servant"
@@ -134,7 +143,7 @@ export default function HeroSection() {
 
               {/* Mobile: Rectangle image */}
               <div className="lg:hidden">
-                <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+                <div className="relative w-full aspect-[5/5]  overflow-hidden shadow-xl">
                   <Image
                     src="/images/hero-images/Sazzad.jpg"
                     alt="Dr. Sazzad Siddiqui - Educator, Author, and Public Servant"
