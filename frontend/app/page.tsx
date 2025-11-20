@@ -17,14 +17,14 @@ export const metadata = {
 }
 
 export default async function Home() {
-  let articles: Article[] = []
+  // let articles: Article[] = []
 
-  try {
-    const response = await articlesApi.getAll(0, 6)
-    articles = response.data
-  } catch (error) {
-    console.error('Failed to fetch articles:', error)
-  }
+  // try {
+  //   const response = await articlesApi.getAll(0, 6)
+  //   articles = response.data
+  // } catch (error) {
+  //   console.error('Failed to fetch articles:', error)
+  // }
 
   return (
     <main className="min-h-screen">
@@ -34,7 +34,7 @@ export default async function Home() {
       {/* <FeaturedWorkSection/> */}
       
       {/* Welcome Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      {/* <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="max-w-6xl mx-auto px-8">
           <h1 className="text-5xl font-bold mb-4">
             Welcome to Our News Platform
@@ -49,10 +49,10 @@ export default async function Home() {
             Explore Articles
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Latest Articles */}
-      <section className="max-w-6xl mx-auto px-8 py-16">
+      {/* <section className="max-w-6xl mx-auto px-8 py-16">
         <h2 className="text-3xl font-bold mb-8">Latest Articles</h2>
         
         {articles.length === 0 ? (
@@ -88,7 +88,7 @@ export default async function Home() {
             View All Articles →
           </Link>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
