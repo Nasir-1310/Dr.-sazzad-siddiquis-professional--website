@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import Button, { ArrowRightIcon, ArrowLeftIcon } from "@/components/ui/Button";
+import Button, { ArrowRightIcon, ExternalLinkIcon, ArrowLeftIcon } from "@/components/ui/Button";
 
 type Slide = {
   id: string;
@@ -15,15 +15,15 @@ type Slide = {
 const SLIDES: Slide[] = [
   {
     id: "public-voice1",
-    title: "Negotiating peace through research-backed diplomacy.",
-    cta: { label: "Read More", href: "/platform" },
+    title: "মব জাস্টিস না বলে এটাকে সংগঠিত সহিংসতা বলাই শ্রেয়",
+    cta: { label: "Read More", href: "https://www.ajkerpatrika.com/op-ed/column/ajpfhvejjoajn" },
     image: "/slider-images/slider-1.jpg",
     indicatorColor: "#0EA5E9",
   },
   {
     id: "public-voice",
-    title: "Elevating peace studies with actionable scholarship.",
-    cta: { label: "Read More", href: "/teaching" },
+    title: "Military officers, civil charges, and the future of democratic rule.",
+    cta: { label: "Read More", href: "https://www.thedailystar.net/opinion/views/news/military-officers-civil-charges-and-the-future-democratic-rule-4009021" },
     image: "/slider-images/slider-2.jpg",
     indicatorColor: "#8B5CF6",
   },
@@ -103,10 +103,12 @@ export default function ProfessionalSlider() {
                   href={activeSlide.cta.href}
                   variant="gradient"
                   size="lg"
-                  icon={<ArrowRightIcon />}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shadow-xl hover:shadow-2xl text-[10px]  sm:text-base"
+                   className=" bg-black  text-white  "
+                                       
+                                        icon={<ExternalLinkIcon />} 
+                                        iconPosition="right"
+              
+                  
                 >
                   {activeSlide.cta.label}
                 </Button>
