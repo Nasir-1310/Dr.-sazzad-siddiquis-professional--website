@@ -14,6 +14,8 @@ interface ButtonProps {
   iconPosition?: 'left' | 'right';
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  target?: '_blank' | '_self' | '_parent' | '_top';
+  rel?: string;
 }
 
 export default function Button({
@@ -28,6 +30,8 @@ export default function Button({
   iconPosition = 'right',
   className = '',
   type = 'button',
+  target,
+  rel,
 }: ButtonProps) {
   
   // Size classes
@@ -77,7 +81,7 @@ export default function Button({
   // If href is provided, render as Link
   if (href && !disabled) {
     return (
-      <Link href={href} className={baseClasses}>
+      <Link href={href} className={baseClasses} target={target} rel={rel}>
         {content}
       </Link>
     );

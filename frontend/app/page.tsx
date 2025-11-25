@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { articlesApi } from '@/lib/api'
 import { Article } from '@/types/article'
 import HeroSection from '@/components/HeroSection'
+import ProfessionalSlider from '@/components/ProfessionalSlider'
 // import FeaturedWorkSection from '@/components/FeaturedWorkSection'
 import MyRolesSection from '@/components/MyRolesSection'
 
@@ -30,6 +31,7 @@ export default async function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
+      <ProfessionalSlider />
       <MyRolesSection />
       {/* <FeaturedWorkSection/> */}
       
